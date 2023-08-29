@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<title>alpha-gun</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="icon" href=""><!-- favicon.ico -->
+<!-- フォントの設定 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
+<!-- OGPの設定 -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="alpha-gun" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://alpha-gun.github.io/" />
+<meta property="og:site_name" content="alpha-gun" />
+<meta property="og:image" content="https://alpha-gun.github.io/images/thumbnail.jpg" />
+<!-- Twitterカードの設定 -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="alpha-gun" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="@alpha_gun" />
+</head>
+
+<body>
+<!-- ========== header ========== -->
+<header>
+	<div class="container header-container">
+		<div class="header-inner">
+			<h1 class="header-logo">
+				<img src="">
+			</h1>
+		</div>
+	</div><!-- /header-container -->
+</header>
+<!-- ========== /header ========== -->
+
+<section class="page-cover">
+
+<!-- ========== main ========== -->
+<section class="main">
+	<div class="container">
+		<main>
+
+			<a href="bargain/" target="_blank" class="img_wrap"><img src="images/bargain.png"></a>
+			<a href="summer/" target="_blank" class="img_wrap"><img src="images/summer.png"></a>
+			<a href="twitter/" target="_blank" class="img_wrap"><img src="images/twitter.png"></a>
+
+		</main>
+	</div>
+</section>
+<!-- ========== /main ========== -->
+
+</section>
+
+<!-- ========== footer ========== -->
+<footer>
+	<div class="container footer-container">
+		<ul class="footer-nav">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul><!-- /.footer-nav -->
+		<p class="footer-copyright">
+		</p><!-- /.footer-copyright -->
+	</div><!-- /.footer-container -->
+</footer>
+<!-- ========== /footer ========== -->
+
+<script src="script/script.js"></script>
+<script src="script/swiper.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+
+<script>
+//画像スライダー
+var swiper = new Swiper('.swiper-container', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	loop: true,
+	autoHeight: true,
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: true
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+});
+//一番上に戻る
+jQuery(document).ready(function() {
+	var offset = 100;
+	var duration = 500;
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+			jQuery('.pagetop').fadeIn(duration);
+		} else {
+			jQuery('.pagetop').fadeOut(duration);
+		}
+	});
+	jQuery('.pagetop').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({scrollTop: 0}, duration);
+		return false;
+	})
+});
+</script>
+
+<div class="pagetop"><img src="images/top.png" class="pagetop-img"></div> 
+
+</body>
+</html>
