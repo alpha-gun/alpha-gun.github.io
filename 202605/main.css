@@ -1,11 +1,42 @@
 @charset "utf-8";
 
 html {
-	font-size: 16px;
-	font-family: 'M PLUS 1p', sans-serif;
 	color: #D4332D;
 	background-image: url('back.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+video {
+	margin: 0 calc(50% - 50vw);
+	width: 100vw;
+}
+
+table {
+	width: 100vw;
+	overflow-x: hidden
+}
+
+.level_btn img {
+	margin: 0 calc(50% - 50vw);
+	width: 100vw;
+	overflow-x: hidden
+}
+
+.sample_play_btn img {
+	margin: 0;
+	width: 50vw;
+	overflow-x: hidden
+}
+
+.sample_pause_btn img {
+	margin: 0;
+	width: 50vw;
+	overflow-x: hidden
 }
