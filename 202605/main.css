@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+html {
+	font-size: 16px;
+	font-family: 'M PLUS 1p', sans-serif;
+	color: #D4332D;
+	background-image: url('back.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
