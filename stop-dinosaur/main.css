@@ -14,26 +14,21 @@ body {
 video {
 	margin: 0 calc(50% - 50vw);
 	width: 100vw;
-	overflow-x: hidden
 }
 table {
 	width: 100vw;
-	overflow-x: hidden
 }
 .level_btn img {
 	margin: 0 calc(50% - 50vw);
 	width: 100vw;
-	overflow-x: hidden
 }
 .sample_play_btn img {
 	margin: 0;
 	width: 50vw;
-	overflow-x: hidden
 }
 .sample_pause_btn img {
 	margin: 0;
 	width: 50vw;
-	overflow-x: hidden
 }
 
 @media (min-aspect-ratio: 1/1) {
@@ -52,26 +47,21 @@ table {
 	video {
 		margin: 0 calc(50% - 50vw);
 		width: 380px;
-		overflow-x: hidden;
 	}
 	table {
 		width: 380px;
-		overflow-x: hidden;
 		margin: auto;
 	}
 	.level_btn img {
 		margin: 0 calc(50% - 50vw);
 		width: 380px;
-		overflow-x: hidden;
 	}
 	.sample_play_btn img {
 		margin: 0;
 		width: 190px;
-		overflow-x: hidden;
 	}
 	.sample_pause_btn img {
 		margin: 0;
 		width: 190px;
-		overflow-x: hidden;
 	}
 }
