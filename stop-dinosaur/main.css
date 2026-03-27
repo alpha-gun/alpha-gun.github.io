@@ -28,9 +28,8 @@ table {
 }
 .sample_play_btn {
 	background-image: url(start.png);
-	/* width: calc(50vw - 2px); */
-	width: 488px;
-	height: 286px;
+	width: calc(50vw - 2px);
+	height: calc(29.3vw - 2px);
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -40,9 +39,8 @@ table {
 }
 .sample_pause_btn {
 	background-image: url(stop.png);
-	/* width: calc(50vw - 2px); */
-	width: 488px;
-	height: 286px;
+	width: calc(50vw - 2px);
+	height: calc(29.3vw - 2px);
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
